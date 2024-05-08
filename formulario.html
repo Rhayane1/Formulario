@@ -8,8 +8,48 @@
 <body>
     <div>
         <h1 id="titulo">Cadastro de DEVs</h1>
-        <p id="subtitulo"></p>
+        <p id="subtitulo">Complete suas informações</p>
     </div>
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required></input>
+            </div>
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+         </fieldset>
+         <br>
+         <div class="campo">
+            <label><strong>De qual lado da aplicação voce desenvolve?</strong></label>
+            <label>
+                <input type="radio" nome="devweb" value="frontend" checked>Front-end
+            </input> 
+            </label>
+            <label>
+                <input type="radio" nome="devweb" value="fullstack">fullstack
+                </input>
+            </label>
+         </div>
+         <br>
+         <div class="campo">
+            <label for="senioridade"><strong> Senioridade</strong></label>
+            <select id="senioridade">
+                <option selected disable value="">Selecione</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option> Senior</option> 
+            </select>
+
+        </div>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
+            </div>
+        </fieldset>
+    </form>
     
 </body>
 </html>
